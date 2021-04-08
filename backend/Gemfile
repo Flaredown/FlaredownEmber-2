@@ -66,6 +66,7 @@ gem 'ruby-progressbar', require: false
 gem 'kaminari-mongoid'
 gem 'kaminari-actionview'
 gem 'rack-cors', require: 'rack/cors'
+gem 'rubyzip', '1.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -17,7 +17,7 @@ namespace :utils do
     CSV.open('export.csv', 'wb') do |csv|
       csv << headers
 
-      User.all.each do |user|
+      User.includes(:profile).find_each do |user|
         age = user.profile.age
         sex = user.profile.sex_id
         country = user.profile.country_id
